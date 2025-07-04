@@ -4,24 +4,24 @@ import expertise from "../assets/expertise.png";
 
 const expertiseData = [
   {
-    title: "🚀 Branding & Development",
+    title: "🚀 Full Stack Web Development",
     description:
-      "I build fast, scalable, and secure web applications with a strong emphasis on performance and usability. Leveraging tools like React, Node.js, Webflow, and AWS, I avoid generic templates and craft custom experiences tailored to your brand.",
+      "I craft secure and scalable full-stack applications using technologies like React, Node.js, Express, and MongoDB. From user authentication to dynamic data rendering, my focus is on building efficient web systems.",
   },
   {
-    title: "🎨 UI Design",
+    title: "🔧 Microservices & Backend Architecture",
     description:
-      "I design clean, modern, and responsive interfaces using Tailwind CSS, React, and Figma. Every design is performance-driven and built to adapt seamlessly across devices.",
+      "At TerraGrid Tech, I designed modular microservices with features like OAuth2 authentication, JSON schema validation, and PDF receipt generation. I also implemented a custom API Gateway using Express Gateway.",
   },
   {
-    title: "🧩 Microservices & Backend Architecture",
+    title: "🤖 AI & Robotics Training",
     description:
-      "I specialize in building modular, scalable backend systems using Node.js, Express.js, and MongoDB. At TGT, I designed production-ready microservices with OAuth2 auth, API Gateways, rate limiting, and PDF generation. My solutions are structured, versioned, and ready for real-world traffic.",
+      "At Nirman Lab, I led hands-on AI and robotics workshops for school students, teaching ML basics, electronics, and robotics with real-world problem solving.",
   },
   {
-    title: "Development",
+    title: "📱 Real-time Health Monitoring",
     description:
-      "I create user-friendly, adapting, and engaging websites. No cookie-cutters. I employ top-notch techniques to build custom, secure, and scalable solutions.",
+      "I developed 'Cikitsam', a wearable health app using React, Firebase, and Python ML for live heart rate, BPM, and RR interval monitoring with secure auth.",
   },
 ];
 
@@ -40,7 +40,7 @@ const Expertise = () => {
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 flex items-center gap-3">
           <img src={expertise} alt="expertise-icon" className="w-8 h-8" />
-          Expertise
+          Experiences
         </h2>
 
         <div className="grid sm:grid-cols-2 gap-8">
