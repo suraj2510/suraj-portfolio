@@ -12,7 +12,7 @@ export function FloatingDockDemo() {
     {
       title: "Home",
       icon: (
-        <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-500" />
+        <IconHome className="h-full w-full text-neutral-500 " />
       ),
       href: "#",
     },
@@ -20,7 +20,7 @@ export function FloatingDockDemo() {
     {
       title: "Products",
       icon: (
-        <IconTerminal2 className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconTerminal2 className="h-full w-full text-neutral-500 " />
       ),
       href: "#",
     },

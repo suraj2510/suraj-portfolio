@@ -3,6 +3,7 @@ import expertise from "../assets/expertise.png";
 import work from "../assets/work1.png";
 import work2 from "../assets/work2.png";
 import work3 from "../assets/work3.png";
+import work4 from "../assets/work4.png";
 
 const works = [
   {
@@ -11,26 +12,39 @@ const works = [
       "A fully featured UI design for showcasing skills, projects, and contact information.",
     detail: "",
     image: work,
-    github: "https://github.com/SurajTGT/my-portfolio", // Update with actual repo
-    live: "https://surajtgt.vercel.app", // Update with your deployed portfolio link
+    github: "https://github.com/suraj2510/suraj-portfolio",
+    live: "https://surajtgt.vercel.app",
   },
   {
     title: "Cikitsām",
     description:
-      "Cikitsām - Integrative Chrono-Bio-Medical Device for Real-Time Health Monitoring.",
-    detail: "",
+      "A real-time health monitoring web app integrated with a wearable device, analyzing heart rate, BPM, and RR intervals using live sensor data and ML models.",
+    detail:
+      "Cikitsām is a medical-grade health monitoring system combining a wearable hardware device and a full-stack web app to deliver real-time physiological insights. The frontend is built using React.js and Tailwind CSS, with Firebase for user authentication and data storage. Sensor data is streamed live from the wearable to the cloud and visualized on the dashboard. \n\nThe RR Interval Monitoring Device is built using a MAX30102 pulse oximeter sensor and ESP32 microcontroller, programmed via the Arduino IDE. It transmits heart-related signals including heart rate, BPM, and RR intervals to the app, where Python-based ML models analyze patterns for healthcare tracking and early anomaly detection.\n\nKey Features:\n• Real-time heart rate and RR interval monitoring\n• Secure user login via Firebase\n• Wearable device integration using ESP32 + MAX30102\n• Data streaming and visualization\n• Machine learning-based signal analysis",
     image: work2,
-    github: "https://github.com/suraj2510/cikitsam", // Replace if repo is private or different
-    live: "https://cikitsam.com", // Replace with actual deployed link
+    github: "https://github.com/suraj2510/cikitsam",
+    live: "https://cikitsam.com",
+  },
+
+  {
+    title: "GT by TerraGrid TECH",
+    description:
+      "A scalable digital receipt platform using microservices to eliminate paper waste and simplify expense management across POS systems.",
+    detail:
+      "GT by TerraGrid TECH is an eco-conscious digital receipt platform designed to help businesses and consumers transition away from paper receipts. Built with a modern microservices architecture, the platform enables users to receive, store, and manage receipts digitally, reducing environmental impact and improving record-keeping. The system is designed for high scalability, modularity, and seamless integration with existing Point of Sale (POS) systems.\n\nThe platform uses 9 purpose-built microservices to handle core functionalities including receipt ingestion, generation, storage, QR-code access, and analytics. It supports CRM/ERP sync, OAuth-based authentication, PDF rendering, and secure cloud storage. An admin panel is included for managing receipts, clients, and tracking system activity.",
+    image: work3,
+    github: "https://github.com/TerraGridTech/POS-API", // Update with actual
+    live: "https://github.com/TerraGridTech/POS-API", // Update with actual
   },
   {
-    title: "TGT by TerraGrid TECH",
-    description: "Digital Receipts for a Sustainable Future.",
+    title: "SURAJ@WORLD",
+    description:
+      "A modern React app displaying comprehensive data of 200+ countries using REST API.",
     detail:
-      "TGT by TerraGrid TECH is a digital receipt platform that aims to reduce paper waste and promote sustainability. It allows users to receive, store, and manage their receipts digitally, making it easier to track expenses and reduce environmental impact.",
-    image: work3,
-    github: "https://github.com/TerraGridTech/POS-API", // Actual microservice repo
-    live: "https://github.com/TerraGridTech/POS-API", // Replace with actual live domain if hosted
+      "This project visualizes detailed information about countries worldwide such as native names, population, region, sub-region, capital, top-level domain, and currency. Built using React 19 with routing support via React Router DOM, and data fetching handled by Axios. The application presents data in a clean UI with responsive layouts, icons for better readability (via React Icons), and a seamless SPA experience.",
+    image: work4,
+    github: "https://github.com/suraj2510/Suraj-World",
+    live: "https://suraj-world.netlify.app/",
   },
 ];
 
@@ -64,10 +78,10 @@ const Works = () => {
               <div className="p-6 flex flex-col justify-between md:w-1/2">
                 <div>
                   <h3 className="text-lg font-semibold mb-2">{work.title}</h3>
-                  <p className="text-sm text-gray-300 mb-4">
+                  <p className="text-md text-gray-300 mb-4">
                     {work.description}
                   </p>
-                  <p className="text-sm">{work.detail}</p>
+                  <p className="text-sm whitespace-pre-line">{work.detail}</p>
                 </div>
                 <div className="flex gap-3 mt-4">
                   <a

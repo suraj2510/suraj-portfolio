@@ -1,5 +1,11 @@
 import React from "react";
-import { FloatingDockDemo } from "./FloatingDockDemo";
+import {
+  FaLinkedin,
+  FaTwitter,
+  FaGithub,
+  FaHome,
+} from "react-icons/fa";
+import { SiPeerlist } from "react-icons/si";
 
 const Footer = () => {
   return (
@@ -20,12 +26,53 @@ const Footer = () => {
 
         {/* Footer Bottom */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 md:gap-6 text-sm text-gray-100">
-          <p className="text-base font-bold text-center md:text-left">
-            © SURAJ MAURYA – 2025
+          <p className="text-base text-center md:text-left">
+            © Suraj Maurya. All rights reserved.
           </p>
 
           <div className="flex justify-center md:justify-end sm:justify-start">
-            <FloatingDockDemo />
+            <div className="flex justify-center gap-6 flex-wrap">
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:scale-110 transition-transform duration-300"
+              >
+                <FaHome className="text-3xl text-pink-500 hover:text-pink-300" />
+              </a>
+              <a
+                href="https://github.com/suraj2510"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:scale-110 transition-transform duration-300"
+              >
+                <FaGithub className="text-3xl text-gray-400 hover:text-white" />
+              </a>
+              <a
+                href="https://x.com/surajxcode"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:scale-110 transition-transform duration-300"
+              >
+                <FaTwitter className="text-3xl text-sky-400 hover:text-sky-200" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/surajmaurya252101101/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:scale-110 transition-transform duration-300"
+              >
+                <FaLinkedin className="text-3xl text-blue-500 hover:text-blue-300" />
+              </a>
+              <a
+                href="https://peerlist.io/surajmaurya1659"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:scale-110 transition-transform duration-300"
+              >
+                <SiPeerlist className="text-3xl text-yellow-400 hover:text-yellow-200" />
+              </a>
+            </div>
           </div>
         </div>
       </div>

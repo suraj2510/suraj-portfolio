@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <div className="overflow-x-hidden bg-[#010208] text-white">
       {/* Keyframe animation style */}
-      <style jsx>{`
+      <style>{`
         @keyframes marquee {
           0% {
             transform: translateX(100%);
@@ -32,6 +32,7 @@ const Navbar = () => {
         }
       `}</style>
 
+
       {/* Navbar */}
       <div className="w-full px-4 py-3">
         <div className="flex flex-col md:flex-row justify-between items-center max-w-6xl mx-auto gap-4 md:gap-0">
@@ -40,17 +41,11 @@ const Navbar = () => {
             alt="logo"
             className="h-8 w-auto max-w-full object-contain"
           />
-          <div className="flex flex-wrap justify-center md:justify-between gap-3 text-sm md:text-base">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Project</a>
-            <a href="#">Contact</a>
-          </div>
           <a
             href="/SurajResumeNew.pdf"
             download
             rel="noopener noreferrer"
-            className="px-4 py-1 border border-white rounded-full hover:bg-white hover:text-black transition text-xs sm:text-sm font-semibold whitespace-nowrap"
+            className="px-4 py-2 border border-white rounded-full hover:bg-white hover:text-black transition text-xs sm:text-sm font-semibold whitespace-nowrap"
           >
             Download Resume
           </a>
@@ -60,9 +55,11 @@ const Navbar = () => {
       {/* Hero Section */}
       <div className="flex items-center justify-center pt-4 text-white text-center">
         <div className="max-w-6xl mx-auto px-4 py-10 sm:py-20 text-center">
-          <p className="text-lg sm:text-xl md:text-2xl tracking-widest text-gray-400 mb-2">
+          <p className="text-xl sm:text-xl md:text-2xl tracking-widest text-gray-400 mb-2">
             Hi, my name is{" "}
-            <span className="text-blue-600 font-bold">Suraj Maurya</span>
+            <span className="text-blue-600 font-bold text-2xl sm:text-3xl md:text-4xl whitespace-nowrap">
+              Suraj Maurya
+            </span>
           </p>
 
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold uppercase leading-tight space-y-2">
