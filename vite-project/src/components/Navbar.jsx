@@ -71,7 +71,7 @@ const Navbar = () => {
               </Cover>
             </div>
 
-            <div className="text-base sm:text-lg md:text-xl tracking-wide text-gray-300">
+            <div className="text-base sm:text-lg md:text-xl tracking-wide text-gray-300 ">
               Based in India, building web products that matter.
             </div>
           </h1>

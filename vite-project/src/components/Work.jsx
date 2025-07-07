@@ -13,7 +13,7 @@ const works = [
     detail: "",
     image: work,
     github: "https://github.com/suraj2510/suraj-portfolio",
-    live: "https://surajtgt.vercel.app",
+    live: "https://suraj-live.netlify.app/",
   },
   {
     title: "Cikitsām",
