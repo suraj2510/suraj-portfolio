@@ -73,13 +73,13 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* ───────── Visitor Counter Badge ───────── */}
+        {/* ───────── Visitor Counter Badge (All-Time) ───────── */}
         <div className="text-center mt-6">
-            <img
+          <img
             className="w-30 m-auto"
-              src="https://api.visitorbadge.io/api/daily?path=https%3A%2F%2Fsuraj-live.netlify.app%2F&label=Visitor&labelColor=%23155DFC&countColor=%23010258&labelStyle=upper"
-              alt="Visitor badge showing number of visitors"
-            />
+            src="https://api.visitorbadge.io/api/total?path=https%3A%2F%2Fsuraj-live.netlify.app%2F&label=Visitor&labelColor=%23155DFC&countColor=%23010258&labelStyle=upper"
+            alt="Visitor badge showing total number of visitors"
+          />
         </div>
       </div>
     </footer>
